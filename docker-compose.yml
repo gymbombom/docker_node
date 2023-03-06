@@ -1,0 +1,15 @@
+version: "3.0"
+
+services:
+    node:
+        container_name: node     
+        image: node:1
+        platform: linux/arm
+        hostname: node
+        stdin_open: true
+        tty: true
+        privileged: true
+        volumes:
+            - /mnt/c/Users/leeilkyu/Desktop/VSCode-win32-x64-1.66.2/workspace/share:/root/node/share
+        ports:
+            - "8000:8000"
